@@ -1,0 +1,17 @@
+{
+    "name": "fairwayproject/project",
+    "authors": [
+        {
+            "name": "Pyi Myo Zin"
+        }
+    ],
+    "require": {
+        "fakerphp/faker": "^1.23"
+    },
+    "autoload": {
+        "psr-4": {
+            "_Libs\\": "_classes/Libs/",
+            "Helpers\\": "_classes/Helpers/"
+        }
+    }
+}

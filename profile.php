@@ -19,6 +19,12 @@ if(!isset($_SESSION['user'])) {
 <body>
     <div class="container mt-5">
         <h1 class="mb-3">Jon Doe( Manager )</h1>
+        <?php if(isset($_GET['error'])):?>
+            <div class="alert alert-warning">Cannot upload file.</div>
+        <?php endif; ?>
+        <?php if(file_exists("_actions/photos/profile.jpg")):?>
+            <img src="_actions/photos/profile.jpg" alt="profile" class="image-thumbnail mb-3" width="200"> 
+        <?php endif; ?>
         <form action="_actions/upload.php" method="post" enctype="multipart/form-data">
             <div class="input-group mb-3">
                 <input type="file" name="photo" class="form-control">
@@ -26,18 +32,19 @@ if(!isset($_SESSION['user'])) {
             </div>
         </form>
         <ul class="list-group">
-            <li class="lis-group-item">
+            <li class="list-group-item">
                 <b>Email:</b> john.doe@gmail.com
             </li>
-            <li class="lis-group-item">
+            <li class="list-group-item">
                 <b>Phone:</b> (09) 243 867 645
             </li>
             <li class="list-group-item">
                 <b>Address:</b> No. 321, Main Street, West City
             </li>
         </ul>
+        <br>
+        <a href="_actions/logout.php">Logout</a>
     </div>
-    <br>
-    <a href="_actions/logout.php">Logout</a>
+    
 </body>
 </html>
