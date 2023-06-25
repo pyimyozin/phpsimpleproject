@@ -6,12 +6,7 @@
         }
     ],
     "require": {
-        "fakerphp/faker": "^1.23"
-    },
-    "autoload": {
-        "psr-4": {
-            "_Libs\\": "_classes/Libs/",
-            "Helpers\\": "_classes/Helpers/"
-        }
+        "fakerphp/faker": "^1.23",
+        "nesbot/carbon": "^2.67"
     }
 }
