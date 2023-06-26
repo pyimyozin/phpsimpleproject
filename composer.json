@@ -1,12 +1,17 @@
 {
     "name": "fairwayproject/project",
+    "autoload": {
+        "psr-4": {
+            "Fairwayproject\\Project\\": "src/"
+        }
+    },
     "authors": [
         {
-            "name": "Pyi Myo Zin"
+            "name": "Pyi Myo Zin",
+            "email": "pyimyozin1357@gmail.com"
         }
     ],
     "require": {
-        "fakerphp/faker": "^1.23",
-        "nesbot/carbon": "^2.67"
+        "fakerphp/faker": "^1.23"
     }
 }

@@ -7,7 +7,7 @@ use Libs\Database\MySQL;
 use Libs\Database\UsersTable;
 
 $faker = Faker::create();
-$table = new UsersTable(new mySQL());
+$table = new UsersTable(new MySQL());
 
 if($table) {
     echo "Data connection opened.\n";

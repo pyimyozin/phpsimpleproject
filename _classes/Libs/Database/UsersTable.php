@@ -11,7 +11,7 @@ class UsersTable {
 
     public function insert($data) {
         try {
-            $query = "INSERT INTO users (name, email, phone, address,password, role_id, created_at) VALUES (:name, :email, :phone, :address,
+            $query = "INSERT INTO users (name, email, phone, address, password, role_id, created_at) VALUES (:name, :email, :phone, :address,
 :password, :role_id, NOW())";
             $statement = $this->db->prepre($query);
             $statement->execute($data);
